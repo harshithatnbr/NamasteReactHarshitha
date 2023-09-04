@@ -1,0 +1,22 @@
+{
+  "name": "ignitingtheapp-2",
+  "version": "1.0.0",
+  "description": "this is namaste react course by harshitha",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshithatnbr/NamasteReactHarshitha.git"
+  },
+  "author": "harshitha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshithatnbr/NamasteReactHarshitha/issues"
+  },
+  "homepage": "https://github.com/harshithatnbr/NamasteReactHarshitha#readme",
+  "dependencies": {
+    "parcel": "^2.9.3"
+  }
+}
