@@ -1,20 +1,37 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// to create basic react element
-const heading=React.createElement("h1",{id:"heading"},"hello from react.js in app.js file");
-// root.render(heading);
-const root=ReactDOM.createRoot(document.getElementById("root"));
+// creating react elements using jsx
+ const jsxHeading=<h1>Hello using jsx!!</h1>
+ const multiline=(
+    <h1>Hello using multiline!!</h1> 
+ );
+ const root=ReactDOM.createRoot(document.getElementById("root"));
+ //root.render(multiline);
+ 
 
-// line 4 is common for all
-// to create nested structure
-const parent=React.createElement("div",
-{id:"parent"},
-React.createElement("div",
-{id:"child"},
-React.createElement("h1",
-{id:"title"},
-"i am nested structure by harshitha")));
+ //creating functional components
+ // functional componets are normal js arrow functions and return jsx...
+
+ // single jsx using components
+// always use camel case in naming components!!
+ const SingleComponent=()=>
+ {
+    return <h1>Nmaste Functional component using single line</h1>
+ };
+// root.render(SingleComponent); 
+ // this is not understood by js react because it expects a react elment inside render
+// root.render(<SingleComponent/>);
+
+ const MultiComponent=()=>
+ {
+    return (
+        <div className="container">
+            <h1>Namaste Functional component using multi line Components</h1>
+        </div>
+
+    )// multi jsx so round brackets
+ };
+ root.render(<MultiComponent/>);
 
 
-root.render(parent);
